@@ -1,0 +1,8 @@
+@import 'bootstrap';
+@import "globalFonts";
+@import 'variables';
+@import 'mixins';
+
+.page {
+  background-color: $beige;
+}
