@@ -20,13 +20,13 @@ export default {
 };
 </script>
 
-<style lang="scss" module>
+<style lang="scss" scoped>
 .btn-outline {
   color: $purple;
   font-size: 12px;
   padding: 15px 20px;
   border: 2px solid $purple;
-  border-radius: 40px;
+  border-radius: 44px;
   background-color: #fff;
 
   &:hover {

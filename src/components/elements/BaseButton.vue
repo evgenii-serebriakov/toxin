@@ -1,7 +1,7 @@
 <template>
   <button 
     type="button" 
-    class="btn btn--primary text-uppercase fw-bold"
+    class="btn text-uppercase fw-bold"
   > 
     <span class="btn__text">{{ text }}</span>
     <i class="btn__icon">
@@ -28,24 +28,21 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .btn {
     display: flex;
     justify-content: center;
     align-items: center;
     background: $purpleGradient;
     border: none;
-    border-radius: 40px;
+    border-radius: 44px;
     width: 100%;
     font-size: 12px;
     color: #fff;
+    padding: 15px 20px;
 
     &:hover {
       color: #fff;
-    }
-
-    &--primary {
-      padding: 15px 20px;
     }
 
     &__text {

@@ -1,11 +1,14 @@
 <template>
-  <input
-    :id="idAttr"
-    :class="classAttr"
-    :type="type"
-    :placeholder="placeholder"
-    :disabled="disabled"
-  >
+  <div class="input">
+    <input
+      :id="idAttr"
+      :class="classAttr"
+      class="input__text"
+      :type="type"
+      :placeholder="placeholder"
+      :disabled="disabled"
+    >
+  </div>
 </template>
 
 <script>
@@ -35,3 +38,22 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.input {
+  &__text {
+    border: 1px solid $darkShade25;
+    color: $darkShade75;
+    &:hover,
+    &:focus {
+      color: $darkShade75;
+      outline: none;
+      border: 1px solid $darkShade50;
+      box-shadow: none;
+    }
+    &::placeholder {
+      color: $darkShade25;
+    }
+  }
+}
+</style>

@@ -9,21 +9,19 @@
         Войти
       </legend>
 
-      <div class="fieldset">
-        <div class="input input-user">
-          <base-input 
-            type="email"
-            placeholder="Email"
-            classAttr=" input__text form-control"
-          />
-        </div>
-        <div class="input input-password">
-          <base-input-password
-            type="password"
-            placeholder="Пароль"
-            classAttr="input__text form-control"
-          />
-        </div>
+      <div class="form__fieldset">
+        <base-input 
+          type="email"
+          placeholder="Email"
+          class="input-user"
+          class-attr="form-control"
+        />
+        <base-input
+          type="password"
+          placeholder="Пароль"
+          class="input-password"
+          class-attr="form-control"
+        />
       </div>
 
       <div class="form__buttons">
@@ -44,7 +42,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .login {
   max-width: 380px;
   
@@ -65,20 +63,6 @@ export default {
       &-password {
         margin-bottom: rem(20);
       }
-      &__text {
-        border: 1px solid $darkShade25;
-        color: $darkShade75;
-        &:hover,
-        &:focus {
-          color: $darkShade75;
-          outline: none;
-          border: 1px solid $darkShade50;
-          box-shadow: none;
-        }
-        &::placeholder {
-          color: $darkShade25;
-        }
-      }
     }
 
     &__buttons {
@@ -97,5 +81,4 @@ export default {
     }
   }
 }
-
 </style>
